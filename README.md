@@ -85,13 +85,11 @@ Open W2044381BOTHERRD.drawio.pdf to view the full conceptual and logical diagram
 
 Open W2044381ERRDCW+(1).pdf for detailed explanations of entities, relationships, and design rationale.
 
-## Author
-
-Hamza Hassan - Final-Year Computer Science Student Cloud & DevOps Enthusiast Focused on Serverless and Edge Architectures
-
 ## License
 This repository was produced for academic assessment. 
 Redistribution or reuse of this material without permission from the author or the University of Westminster is not permitted.
+
+## Author Hamza Hassan - Final-Year Computer Science Student, Cloud & DevOps Enthusiast
 
 ## 📫 Connect with Me
 [LinkedIn](https://www.linkedin.com/in/hamzahassan21/)
