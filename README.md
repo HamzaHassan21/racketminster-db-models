@@ -2,77 +2,97 @@
 
 ## Overview
 
-This repository contains the full conceptual and logical data models for the **Racketminster Booking and Court Management System**, created as part of the 5COSC020W Database Systems module at the University of Westminster.
+This repository contains the conceptual and logical data models for the Racketminster Booking and Court Management System, developed as part of the 5COSC020W Database Systems module at the University of Westminster.
 
-The data models were developed using **Draw.io** and presented in PDF format. These models aim to accurately represent the data requirements, relationships, and business logic outlined in the project brief, with a focus on clarity, specialization, and real-world mapping.
+The models were created using Draw.io and exported in PDF format. They represent the system’s data requirements, relationships, and business rules, following good database design practices. The diagrams demonstrate the use of Specialization, relationship modelling, and entity structuring based on the project brief.
 
-## Contents
+## Contents
 
-- `W2044381BOTHERRD.drawio.pdf`: The full Draw.io diagram including the conceptual and logical models.
-- `W2044381ERRDCW+(1).pdf`: The written coursework report explaining the modelling choices, entity justifications, attributes, specializations, and relationship multiplicities.
+W2044381BOTHERRD.drawio.pdf – The combined Draw.io diagram containing both the conceptual and logical models.
+
+W2044381ERRDCW+(1).pdf – The written coursework report explaining modelling choices, entity design, attributes, constraints, and multiplicities.
 
 ## Conceptual Model
 
-The **conceptual model** outlines the high-level structure of the system by identifying the main entities and relationships without diving into detailed attributes or constraints. It provides a clear visual of the overall system architecture, including:
+The conceptual model presents a high-level view of the system, focusing on the main entities and their relationships without detailing implementation-specific attributes or constraints. It provides a clear representation of the system’s structure, including:
 
-- Core entities such as:  
-  - `Person`  
-  - `Player`  
-  - `Instructor`  
-  - `Caretaker`  
-  - `Court`  
-  - `Park`  
-  - `Playing Session`  
-  - `Booking`  
-  - `Maintenance Log`  
-  - `Equipment`
-- Use of generalization/specialization to define sub-entities:
-  - `Court` → `Tennis`, `Pickleball`, `Multipurpose`
-  - `Playing Session` → `Supervised`, `Unsupervised`
-  - `Caretaker` → `Park Caretaker`, `Court Caretaker`
-  - `Person` → `Player`, `Instructor`, `Caretaker`
-- Important relationships like:
-  - Supervision of sessions by instructors
-  - Participation of players in sessions
-  - Maintenance responsibilities
-  - Equipment assignment to courts
-  - Booking and block-booking logic
+## Key Entities
 
-## Logical Model
+Person, Player, Instructor, Caretaker, Court, Park, Playing Session
+Booking, Maintenance Log, Equipment.
 
-The **logical model** builds upon the conceptual model by including:
+## Specialization and Generalization
 
-- Detailed entity attributes and primary keys (e.g., `Instructor_ID`, `Court_Condition`, `Booking_Status`)
-- Relationship multiplicities, constraints, and roles
-- Ternary and recursive relationships where applicable (e.g., Player–Session–Court attendance)
-- Realistic data modelling assumptions such as:
-  - A playing session can only be held on one court at a time
-  - Block bookings only apply to unsupervised sessions
-  - Maintenance logs are tied to both equipment and caretakers
-  - Referral tracking includes incentives and player-to-player promotion
+Court → Tennis, Pickleball, Multipurpose
+
+Playing Session → Supervised, Unsupervised
+
+Caretaker → Park Caretaker, Court Caretaker
+
+Person → Player, Instructor, Caretaker
+
+## Major Relationships
+
+Instructors supervising sessions
+
+Players participating in sessions
+
+Caretakers responsible for maintenance
+
+Equipment assigned to courts
+
+Booking and block-booking relationships
+
+This model emphasises the business rules and operational requirements of the Racketminster system.
+
+## Logical Model
+
+The logical model refines the conceptual design into a structure suitable for relational database implementation. It includes:
+
+Primary keys, foreign keys, and detailed attributes for each entity
+
+Relationship constraints, cardinalities, and roles
+
+Ternary and recursive relationship modelling (e.g., player–session–court participation)
+
+Logical design decisions such as:
+
+Each playing session occurs on one court only
+
+Block bookings apply exclusively to unsupervised sessions
+
+Maintenance logs connect caretakers and equipment
+
+Referral relationships track player-to-player recommendations
+
+The logical model ensures that the system is ready for translation into a physical schema.
 
 ## Key Features and Improvements
 
-- Specialization used extensively to reflect real-world distinctions
-- Clear and descriptive attribute design across all entities
-- Logical constraints and multiplicities carefully matched to business rules
-- Inclusion of ternary relationships for complex participation tracking
-- Recursive modelling to represent follow-up sessions
-- Modular and extensible entity structure supporting future growth
+Extensive use of specialization to reflect real-world distinctions
 
-## How to View
+Well-defined entity attributes and identifiers
 
-- Use the `W2044381BOTHERRD.drawio.pdf` file to view the full diagram with both conceptual and logical components
-- Refer to `W2044381ERRDCW+(1).pdf` for detailed descriptions of each entity, relationship, and design decision
+Accurate representation of business rules within relationship constraints
 
-## Author
+Inclusion of ternary and recursive relationships where needed
 
-- **Hamza Hassan**  
-- University of Westminster  
-- Module: 5COSC020W Database Systems  
-- Coursework Part A – Tuesday Tutorial Group (4 PM – 6 PM)  
-- Module Leader: Dr Francois Roubert  
+Scalable and modular entity structure for future system expansion
 
-## License
+## How to View the Models
 
-This project was developed for academic purposes. Please do not reuse or redistribute without permission from the author or the University of Westminster.
+Open W2044381BOTHERRD.drawio.pdf to view the full conceptual and logical diagrams.
+
+Open W2044381ERRDCW+(1).pdf for detailed explanations of entities, relationships, and design rationale.
+
+## Author
+
+Hamza Hassan - Final-Year Computer Science Student Cloud & DevOps Enthusiast Focused on Serverless and Edge Architectures
+
+License
+
+This repository was produced for academic assessment. Redistribution or reuse of this material without permission from the author or the University of Westminster is not permitted.
+
+## 📫 Connect with Me
+[LinkedIn](https://www.linkedin.com/in/hamzahassan21/)
+[Youtube](https://www.youtube.com/channel/UC51JEAEBV8WXwf2ZLROvUJw)
