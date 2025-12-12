@@ -79,7 +79,7 @@ Inclusion of ternary and recursive relationships where needed
 
 Scalable and modular entity structure for future system expansion
 
-## How to View the Models
+## How to View the Models
 
 Open W2044381BOTHERRD.drawio.pdf to view the full conceptual and logical diagrams.
 
